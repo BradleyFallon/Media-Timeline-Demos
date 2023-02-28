@@ -1,139 +1,24 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
+    <meta charset="utf-8">
     <title>Video Timeline</title>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script type="text/javascript">
-        google.charts.load('current', { 'packages': ['timeline'] });
-        google.charts.setOnLoadCallback(drawChart);
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js?latest"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Video Timeline: Google Charts Implementation</h1>
+      <a href="../../index.html">Return to the main page</a>
+    </header>
 
-        function drawChart() {
-
-
-            // Example data for reference.  This is the same data as in the json file.
-            var jsonData = [
-                {
-                    "name": "Clip 1",
-                    "startTime": "2022-01-01T00:00:00Z",
-                    "endTime": "2022-01-01T01:00:00Z",
-                    "events": [
-                        {
-                            "name": "Event 1",
-                            "time": "2022-01-01T00:10:00Z"
-                        },
-                        {
-                            "name": "Event 2",
-                            "time": "2022-01-01T00:30:00Z"
-                        }
-                    ]
-                },
-                {
-                    "name": "Clip 2",
-                    "startTime": "2022-01-01T02:00:00Z",
-                    "endTime": "2022-01-01T03:00:00Z",
-                    "events": [
-                        {
-                            "name": "Event 3",
-                            "time": "2022-01-01T02:20:00Z"
-                        },
-                        {
-                            "name": "Event 4",
-                            "time": "2022-01-01T02:40:00Z"
-                        }
-                    ]
-                }
-            ];
-
-            // Read the real json data from file, and continue after it is loaded.
-            jsonData = $.ajax({
-                url: "data_scratch.json",
-                dataType: "json",
-                async: false
-            }).responseText;
-
-            // Wait for the data to be loaded before continuing.
-            jsonData = JSON.parse(jsonData);
-
-            // Create the data table.
-            var dataTable = new google.visualization.DataTable();
-            dataTable.addColumn({ type: 'string', id: 'Clip' });
-            dataTable.addColumn({ type: 'string', id: 'Event' });
-            dataTable.addColumn({ type: 'date', id: 'Start' });
-            dataTable.addColumn({ type: 'date', id: 'End' });
-
-            for (var i = 0; i < jsonData.length; i++) {
-                var clip = jsonData[i];
-                var clipName = clip.name;
-                var clipStart = new Date(clip.startTime);
-                var clipEnd = new Date(clip.endTime);
-                dataTable.addRow([clipName, '', clipStart, clipEnd]);
-
-                var clipEvents = clip.events;
-                for (var j = 0; j < clipEvents.length; j++) {
-                    var event = clipEvents[j];
-                    var eventName = event.name;
-                    var eventTime = new Date(event.time);
-                    dataTable.addRow([clipName, eventName, eventTime, eventTime]);
-                }
-            }
-
-            var options = {
-                timeline: {
-                    groupByRowLabel: true,
-                    showRowLabels: true,
-                    colorByRowLabel: false,
-                    avoidOverlappingGridLines: false,
-                    showBarLabels: true,
-                    barLabelStyle: { fontName: 'Arial', fontSize: 12 },
-                    barLabelWidth: 100,
-                },
-                hAxis: {
-                    format: 'm:ss',
-                    textStyle: {
-                        fontName: 'Arial',
-                        fontSize: 14,
-                        bold: true,
-                        italic: false
-                    },
-                    titleTextStyle: {
-                        fontName: 'Arial',
-                        fontSize: 16,
-                        bold: true,
-                        italic: false
-                    }
-                },
-
-                vAxis: {
-                    textStyle: {
-                        fontName: 'Arial',
-                        fontSize: 14,
-                        bold: true,
-                        italic: false
-                    },
-                    titleTextStyle: {
-                        fontName: 'Arial',
-                        fontSize: 16,
-                        bold: true,
-                        italic: false
-                    }
-                },
-                height: '300px',
-                tooltip: {
-                    isHtml: true
-                }
-            };
-
-
-            var chart = new google.visualization.Timeline(document.getElementById('timeline'));
-            chart.draw(dataTable, options);
-        }
-    </script>
-</head>
-
-<body>
-    <div id="timeline"></div>
-</body>
-
+    <main>
+      <div id="dashboard">
+        <div id="timeline" style="height: 500px;"></div>
+        
+        <div id="control"></div>
+      </div>
+    </main>
+  </body>
 </html>
