@@ -1,0 +1,120 @@
+{
+    "$ref": "#/definitions/AdfishResponse",
+    "definitions": {
+      "AdfishResponse": {
+        "type": "object",
+        "properties": {
+          "IngestTimelines": {
+            "description": "Timelines describing the SCTE35 markers received by the encoder",
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/Timeline"
+            }
+          }
+        }
+      },
+      "Timeline": {
+        "anyOf": [
+          {
+            "$ref": "#/definitions/TimePointTimeline"
+          },
+          {
+            "$ref": "#/definitions/TimeRegionTimeline"
+          }
+        ]
+      },
+      "TimePointTimeline": {
+        "type": "object",
+        "properties": {
+          "Name": {
+            "type": "string",
+            "description": "Timeline Name"
+          },
+          "PtsClock": {
+            "type": "number",
+            "description": "The number of PTS ticks per second. For example, 90 KHz = 90000."
+          },
+          "BeginTime": {
+            "$ref": "#/definitions/Time",
+            "description": "The beginning of the timeline"
+          },
+          "EndTime": {
+            "$ref": "#/definitions/Time",
+            "description": "The end of the timeline"
+          },
+          "TimePoints": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/TimePoint"
+            }
+          }
+        }
+      },
+      "TimeRegionTimeline": {
+        "type": "object",
+        "properties": {
+          "Name": {
+            "type": "string",
+            "description": "Timeline Name"
+          },
+          "PtsClock": {
+            "type": "number",
+            "description": "The number of PTS ticks per second. For example, 90 KHz = 90000."
+          },
+          "BeginTime": {
+            "$ref": "#/definitions/Time",
+            "description": "The beginning of the timeline"
+          },
+          "EndTime": {
+            "$ref": "#/definitions/Time",
+            "description": "The end of the timeline"
+          },
+          "TimeRegions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/TimeRegions"
+            }
+          }
+        }
+      },
+      "TimePoint": {
+        "type": "object",
+        "properties": {
+          "ArrivalTime": {
+            "$ref": "#/definitions/Time",
+            "description": "Arrival Time"
+          },
+          "SpliceTime": {
+            "$ref": "#/definitions/Time",
+            "description": "Splice Time"
+          }
+        }
+      },
+      "TimeRegion": {
+        "type": "object",
+        "properties": {
+          "BeginTime": {
+            "$ref": "#/definitions/Time",
+            "description": "Begin Time"
+          },
+          "EndTime": {
+            "$ref": "#/definitions/Time",
+            "description": "End Time"
+          }
+        }
+      },
+      "Time": {
+        "type": "object",
+        "properties": {
+          "UtcTime": {
+            "type": "string",
+            "description": "ISO8601 representation of the UTC time"
+          },
+          "PtsTime": {
+            "type": "number",
+            "description": "The PTS in ticks"
+          }
+        }
+      }
+    }
+  }
