@@ -1,0 +1,28 @@
+<html>
+
+<head>
+  <title>Timeline | other | A lot of grouped data</title>
+
+  <script src="https://visjs.github.io/vis-timeline/standalone/umd/vis-timeline-graph2d.min.js"></script>
+  <link href="https://visjs.github.io/vis-timeline/styles/vis-timeline-graph2d.min.css" rel="stylesheet"
+    type="text/css" />
+
+  <style type="text/css">
+    body {
+      color: #4D4D4D;
+      font: 10pt arial;
+    }
+
+    .vis-item.event {
+      border-left: 5px solid #5cb85c;
+    }
+  </style>
+</head>
+
+<body onresize="timeline.checkResize();">
+  <h1>Timeline with JSON data file</h1>
+  <div id="visualization"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
