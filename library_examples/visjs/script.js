@@ -3,6 +3,7 @@ fetch('data.json')
   .then(response => response.json())
   .then(data => {
     // create groups
+    // These are rows on the timeline
     var groups = new vis.DataSet([
       {id: 1, content: 'Layer 1'},
       {id: 2, content: 'Layer 2'},
@@ -23,7 +24,7 @@ fetch('data.json')
         group: group,
         start: start,
         end: end,
-        content: item.name
+        content: item.name,
       });
 
       // create the events
@@ -34,20 +35,23 @@ fetch('data.json')
           group: group,
           start: time,
           content: event.name,
-          className: 'event'
+          className: 'marker',
         });
       });
     });
 
     // specify options
     var options = {
-      stack: false,
-      editable: true,
+      stack: true,
+      editable: false,
+      
+      horizontalScroll: true,
+      zoomKey: "ctrlKey",
       margin: {
         item: 10, // minimal margin between items
         axis: 5   // minimal margin between items and the axis
       },
-      orientation: 'top'
+      orientation: 'bottom', // place events below media items
     };
 
     // create a Timeline
@@ -55,6 +59,7 @@ fetch('data.json')
     timeline = new vis.Timeline(container, null, options);
     timeline.setGroups(groups);
     timeline.setItems(items);
+    timeline.setItems(events); // add events to timeline
     
   })
   .catch(error => console.error(error));
