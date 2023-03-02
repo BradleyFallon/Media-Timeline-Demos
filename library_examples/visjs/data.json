@@ -1,32 +1,585 @@
-[
+{
+  "IngestTimelines": [
     {
-        "name": "Media Item 1",
-        "startTime": "2022-01-01T00:00:00Z",
-        "endTime": "2022-01-01T01:00:00Z",
-        "events": [
-            {
-                "name": "Event Marker 1",
-                "time": "2022-01-01T00:10:00Z"
-            },
-            {
-                "name": "Event Marker 2",
-                "time": "2022-01-01T00:30:00Z"
-            }
-        ]
+      "Name": "Media Timeline",
+      "PtsClock": 90000,
+      "BeginTime": {
+        "UtcTime": "2022-10-06T20:54:57.202725"
+      },
+      "EndTime": {
+        "UtcTime": "2022-10-06T21:37:46.034405"
+      },
+      "TimePoints": [
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T20:54:57.202959"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T20:55:47.204086"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T20:56:37.203124"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T20:57:27.219581"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T20:58:17.220191"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T20:59:07.219230"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T20:59:57.220342"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:00:47.236373"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:01:37.235375"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:01:38.704236"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:01:53.721622"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:02:23.733253"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:02:53.746414"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:03:08.761961"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:04:08.837979"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:04:23.853516"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:04:38.866975"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:04:48.877644"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:05:38.910845"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:06:28.927179"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:07:18.928432"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:08:08.927500"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:08:58.928176"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:09:48.944556"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:10:38.943677"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:11:28.944308"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:12:18.943928"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:13:08.961952"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:13:58.961055"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:14:48.960200"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:15:38.960724"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:16:28.977296"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:17:18.978389"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:18:08.977449"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:18:58.978265"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:19:48.977218"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:20:38.993633"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:21:28.994331"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:22:07.248445"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:22:22.263341"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:22:37.278965"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:23:37.355009"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:23:57.359753"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:24:57.436201"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:25:12.451719"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:25:27.464699"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:26:17.498017"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:27:07.516491"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:27:57.515771"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:28:47.516331"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:29:37.515342"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:30:27.531828"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:31:17.532431"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:32:07.531624"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:32:57.547990"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:33:47.549097"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:34:37.548266"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:35:15.870285"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:35:30.885240"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:35:45.900795"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:36:00.915836"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:36:15.931343"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:36:30.944797"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:37:00.958099"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:37:15.973605"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:37:25.984233"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:37:38.029993"
+          }
+        },
+        {
+          "ArrivalTime": {
+            "UtcTime": "2022-10-06T21:37:45.987076"
+          }
+        }
+      ]
     },
     {
-        "name": "Media Item 2",
-        "startTime": "2022-01-01T02:00:00Z",
-        "endTime": "2022-01-01T03:00:00Z",
-        "events": [
-            {
-                "name": "Event Marker 3",
-                "time": "2022-01-01T02:20:00Z"
-            },
-            {
-                "name": "Event Marker 4",
-                "time": "2022-01-01T02:40:00Z"
-            }
-        ]
+      "Name": "Distributor Advertisement",
+      "PtsClock": 90000,
+      "BeginTime": {
+        "UtcTime": "2022-10-06T20:54:57.202725"
+      },
+      "EndTime": {
+        "UtcTime": "2022-10-06T21:37:46.034405"
+      },
+      "TimeRegions": [
+        {
+          "begin_time": "2022-10-06T21:37:45.985076",
+          "end_time": "2022-10-06T21:37:46.034405",
+          "event_id": "0x849d41e"
+        }
+      ]
+    },
+    {
+      "Name": "Break",
+      "PtsClock": 90000,
+      "BeginTime": {
+        "UtcTime": "2022-10-06T20:54:57.202725"
+      },
+      "EndTime": {
+        "UtcTime": "2022-10-06T21:37:46.034405"
+      },
+      "TimeRegions": [
+        {
+          "begin_time": "2022-10-06T21:01:38.702236",
+          "end_time": "2022-10-06T21:04:48.875644",
+          "event_id": "0x828e127"
+        },
+        {
+          "begin_time": "2022-10-06T21:22:07.247445",
+          "end_time": "2022-10-06T21:25:27.463699",
+          "event_id": "0x83ba026"
+        },
+        {
+          "begin_time": "2022-10-06T21:35:15.868285",
+          "end_time": "2022-10-06T21:37:46.034405",
+          "event_id": "0x847a8b2"
+        }
+      ]
+    },
+    {
+      "Name": "Provider Placement Opportunity",
+      "PtsClock": 90000,
+      "BeginTime": {
+        "UtcTime": "2022-10-06T20:54:57.202725"
+      },
+      "EndTime": {
+        "UtcTime": "2022-10-06T21:37:46.034405"
+      },
+      "TimeRegions": [
+        {
+          "begin_time": "2022-10-06T21:01:38.702236",
+          "end_time": "2022-10-06T21:04:48.875644",
+          "event_id": "0x828e127"
+        },
+        {
+          "begin_time": "2022-10-06T21:22:07.247445",
+          "end_time": "2022-10-06T21:25:27.463699",
+          "event_id": "0x83ba026"
+        },
+        {
+          "begin_time": "2022-10-06T21:35:15.868285",
+          "end_time": "2022-10-06T21:37:45.985076",
+          "event_id": "0x847a8b2"
+        }
+      ]
+    },
+    {
+      "Name": "Chapter",
+      "PtsClock": 90000,
+      "BeginTime": {
+        "UtcTime": "2022-10-06T20:54:57.202725"
+      },
+      "EndTime": {
+        "UtcTime": "2022-10-06T21:37:46.034405"
+      },
+      "TimeRegions": [
+        {
+          "begin_time": "2022-10-06T20:54:57.202725",
+          "end_time": "2022-10-06T21:01:38.702236",
+          "event_id": "0x81a5c10"
+        },
+        {
+          "begin_time": "2022-10-06T21:04:48.875644",
+          "end_time": "2022-10-06T21:22:07.247445",
+          "event_id": "0x82bc7ff"
+        },
+        {
+          "begin_time": "2022-10-06T21:25:27.463699",
+          "end_time": "2022-10-06T21:35:15.868285",
+          "event_id": "0x83eae3a"
+        }
+      ]
+    },
+    {
+      "Name": "Distributor Placement Opportunity",
+      "PtsClock": 90000,
+      "BeginTime": {
+        "UtcTime": "2022-10-06T20:54:57.202725"
+      },
+      "EndTime": {
+        "UtcTime": "2022-10-06T21:37:46.034405"
+      },
+      "TimeRegions": [
+        {
+          "begin_time": "2022-10-06T21:37:45.985076",
+          "end_time": "2022-10-06T21:37:46.034405",
+          "event_id": "0x849d41e"
+        }
+      ]
+    },
+    {
+      "Name": "Provider Advertisement",
+      "PtsClock": 90000,
+      "BeginTime": {
+        "UtcTime": "2022-10-06T20:54:57.202725"
+      },
+      "EndTime": {
+        "UtcTime": "2022-10-06T21:37:46.034405"
+      },
+      "TimeRegions": [
+        {
+          "begin_time": "2022-10-06T21:01:38.702236",
+          "end_time": "2022-10-06T21:01:53.717622",
+          "event_id": "0x828e127"
+        },
+        {
+          "begin_time": "2022-10-06T21:01:53.717622",
+          "end_time": "2022-10-06T21:02:23.730253",
+          "event_id": "0x8291bc7"
+        },
+        {
+          "begin_time": "2022-10-06T21:02:23.730253",
+          "end_time": "2022-10-06T21:02:53.743414",
+          "event_id": "0x8299104"
+        },
+        {
+          "begin_time": "2022-10-06T21:02:53.743414",
+          "end_time": "2022-10-06T21:03:08.758961",
+          "event_id": "0x82a0643"
+        },
+        {
+          "begin_time": "2022-10-06T21:03:08.758961",
+          "end_time": "2022-10-06T21:04:08.834979",
+          "event_id": "0x82a40e9"
+        },
+        {
+          "begin_time": "2022-10-06T21:04:08.834979",
+          "end_time": "2022-10-06T21:04:23.850516",
+          "event_id": "0x82b2b96"
+        },
+        {
+          "begin_time": "2022-10-06T21:04:23.850516",
+          "end_time": "2022-10-06T21:04:38.865975",
+          "event_id": "0x82b663d"
+        },
+        {
+          "begin_time": "2022-10-06T21:22:07.247445",
+          "end_time": "2022-10-06T21:22:22.261341",
+          "event_id": "0x83ba026"
+        },
+        {
+          "begin_time": "2022-10-06T21:22:22.261341",
+          "end_time": "2022-10-06T21:22:37.276965",
+          "event_id": "0x83bdac7"
+        },
+        {
+          "begin_time": "2022-10-06T21:22:37.276965",
+          "end_time": "2022-10-06T21:23:37.353009",
+          "event_id": "0x83c156e"
+        },
+        {
+          "begin_time": "2022-10-06T21:23:57.356753",
+          "end_time": "2022-10-06T21:24:57.433201",
+          "event_id": "0x83d4e3e"
+        },
+        {
+          "begin_time": "2022-10-06T21:24:57.433201",
+          "end_time": "2022-10-06T21:25:12.448719",
+          "event_id": "0x83e38eb"
+        },
+        {
+          "begin_time": "2022-10-06T21:25:12.448719",
+          "end_time": "2022-10-06T21:25:27.463699",
+          "event_id": "0x83e7392"
+        },
+        {
+          "begin_time": "2022-10-06T21:35:15.868285",
+          "end_time": "2022-10-06T21:35:30.883240",
+          "event_id": "0x847a8b2"
+        },
+        {
+          "begin_time": "2022-10-06T21:35:30.883240",
+          "end_time": "2022-10-06T21:35:45.898795",
+          "event_id": "0x847e354"
+        },
+        {
+          "begin_time": "2022-10-06T21:35:45.898795",
+          "end_time": "2022-10-06T21:36:00.912836",
+          "event_id": "0x8481dfb"
+        },
+        {
+          "begin_time": "2022-10-06T21:36:00.912836",
+          "end_time": "2022-10-06T21:36:15.928343",
+          "event_id": "0x84858a3"
+        },
+        {
+          "begin_time": "2022-10-06T21:36:15.928343",
+          "end_time": "2022-10-06T21:36:30.943797",
+          "event_id": "0x848934a"
+        },
+        {
+          "begin_time": "2022-10-06T21:36:30.943797",
+          "end_time": "2022-10-06T21:37:00.956099",
+          "event_id": "0x848cdf0"
+        },
+        {
+          "begin_time": "2022-10-06T21:37:00.956099",
+          "end_time": "2022-10-06T21:37:15.971605",
+          "event_id": "0x849432f"
+        }
+      ]
     }
-]
+  ]
+}
+
+

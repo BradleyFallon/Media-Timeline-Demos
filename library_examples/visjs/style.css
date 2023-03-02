@@ -1,0 +1,180 @@
+/* These are the color classes
+ This is to behave like a subset of the materializecss color classes
+color_classes = [
+  'yellow',
+  'light-green',
+  'cyan',
+  'blue-grey',
+  'deep-purple',
+  'cyan',
+  'light-green',
+  'orange',
+]; */
+
+
+/* Color application classes */
+.yellow {
+  background-color: #FFEB3B;
+  border-color: #827717; /* 50% of yellow */
+  color: #000000;
+}
+.orange {
+  background-color: #FF9800;
+    border-color: #b26a00; /* 50% of orange */
+  color: #000000;
+}
+.light-green {
+  background-color: #8BC34A;
+    border-color: #4b830d; /* 50% of light-green */
+  color: #000000;
+}
+.cyan {
+  background-color: #00BCD4;
+    border-color: #00838f; /* 50% of cyan */
+  color: #000000;
+}
+.blue-grey {
+  background-color: #6d98ad;
+    border-color: #1c313a; /* 50% of blue-grey */
+  color: #000000;
+}
+.deep-purple {
+  background-color: #673AB7;
+    border-color: #280680; /* 50% of deep-purple */
+  color: #000000;
+}
+.light-green {
+  background-color: #8BC34A;
+    border-color: #4b830d; /* 50% of light-green */
+  color: #000000;
+}
+
+/* Light Variants */
+.yellow-light {
+  background-color: #FFFDE7;
+  border-color: #827717; /* 50% of yellow */
+  color: #000000;
+}
+.orange-light {
+  background-color: #FFF3E0;
+  border-color: #b26a00; /* 50% of orange */
+  color: #000000;
+}
+.light-green-light {
+  background-color: #F1F8E9;
+  border-color: #4b830d; /* 50% of light-green */
+  color: #000000;
+}
+.cyan-light {
+  background-color: #E0F7FA;
+  border-color: #00838f; /* 50% of cyan */
+  color: #000000;
+}
+.blue-grey-light {
+  background-color: #ECEFF1;
+  border-color: #1c313a; /* 50% of blue-grey */
+  color: #000000;
+}
+.deep-purple-light {
+  background-color: #EDE7F6;
+  border-color: #280680; /* 50% of deep-purple */
+  color: #000000;
+}
+.light-green-light {
+  background-color: #F1F8E9;
+  border-color: #4b830d; /* 50% of light-green */
+  color: #000000;
+}
+/* Transparent variants for highlighted areas */
+.vis-item.vis-background.yellow {
+    background-color: rgba(255, 235, 59, 0.5);
+    border-color: #827717; /* 50% of yellow */
+    color: #000000;
+  }
+  .vis-item.vis-background.orange {
+    background-color: rgba(255, 152, 0, 0.5);
+    border-color: #b26a00; /* 50% of orange */
+    color: #000000;
+  }
+  .vis-item.vis-background.light-green {
+    background-color: rgba(139, 195, 74, 0.5);
+    border-color: #4b830d; /* 50% of light-green */
+    color: #000000;
+  }
+  .vis-item.vis-background.cyan {
+    background-color: rgba(0, 188, 212, 0.5);
+    border-color: #00838f; /* 50% of cyan */
+    color: #000000;
+  }
+  .vis-item.vis-background.blue-grey {
+    background-color: rgba(96, 125, 139, 0.5);
+    border-color: #1c313a; /* 50% of blue-grey */
+    color: #000000;
+  }
+  .vis-item.vis-background.deep-purple {
+    background-color: rgba(103, 58, 183, 0.5);
+    border-color: #280680; /* 50% of deep-purple */
+    color: #000000;
+  }
+  
+  /* Remove duplicated style for light-green */
+  .vis-item.vis-background.light-green {
+    background-color: rgba(139, 195, 74, 0.5);
+    border-color: #4b830d; /* 50% of light-green */
+    color: #000000;
+  }
+  
+  .vis-item {
+    margin-top: 12px;
+  }
+  
+  /* Customize the look of vis.js */
+  body {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  }
+  
+  .vis-item-content {
+    font-size: 18px;
+  }
+  
+  .vis-item.vis-selected {
+    background-color: #ff893b;
+    border-color: #e91e63;
+    color: #000000;
+    border-width: 2px;
+  }
+  
+  .vis-item.vis-dot.vis-selected {
+    border-color: #e91e63;
+    border-width: 6px;
+    border-radius: 5px;
+  }
+  
+
+
+  #info-box {
+    top: 20px;
+    padding: 10px;
+    height: 150px;
+    width: 60%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+    margin-left: 10px;
+  }
+  
+  
+  #info-box h5 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  #info-box p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  

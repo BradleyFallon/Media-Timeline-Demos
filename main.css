@@ -1,9 +1,4 @@
-/* Reset styles */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+
   
   /* Global styles */
   body {
@@ -91,4 +86,12 @@
     color: #666;
   }
   
-  
+  .ul {
+    list-style-type: none;
+
+  }
+
+  .li {
+    display: inline;
+    padding: 10px;
+  }
